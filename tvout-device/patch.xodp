@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "By0OfCriB",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Vertical resolution.",
+      "id": "ByZo9eJLoB",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Horizontal resolution (must be divisible by 8).",
+      "id": "S1ej5e1Isr",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "00h"
+      },
+      "description": "Video mode. \n00h - NTSC  \n01h - PAL.",
+      "id": "SJicgJIoB",
+      "label": "MODE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "A tvout device.",
+      "id": "SyyJUCHoH",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-self"
+    }
+  ]
+}
