@@ -24,9 +24,17 @@ void evaluate(Context ctx) {
         return;
 
     auto state = getState(ctx);
+    auto mode = getValue<input_MODE>(ctx);
+    auto x = getValue<input_X>(ctx);
+    auto y = getValue<input_Y>(ctx);
 
     // Create a new object in the memory area reserved previously.
     Type tv = new (state->mem) TVout();
+
+    if (!tv->begin(mode,x,y)) {
+      raiseError(ctx);
+      return;
+    }
 
     emitValue<output_DEV>(ctx, tv);
 }
