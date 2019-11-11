@@ -1,4 +1,5 @@
 {
+  "description": "Create a tvout device with specified MODE (PAL or NTSC) and resolution.",
   "nodes": [
     {
       "id": "By0OfCriB",
@@ -10,6 +11,9 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "boundLiterals": {
+        "__out__": "96"
+      },
       "description": "Vertical resolution.",
       "id": "ByZo9eJLoB",
       "label": "Y",
@@ -21,6 +25,9 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
+      "boundLiterals": {
+        "__out__": "120"
+      },
       "description": "Horizontal resolution (must be divisible by 8).",
       "id": "S1ej5e1Isr",
       "label": "X",
@@ -33,9 +40,9 @@
     },
     {
       "boundLiterals": {
-        "__out__": "00h"
+        "__out__": "1d"
       },
-      "description": "Video mode. \n00h - NTSC  \n01h - PAL.",
+      "description": "Video mode:\n0d - NTSC;\n1d - PAL.",
       "id": "SJicgJIoB",
       "label": "MODE",
       "position": {

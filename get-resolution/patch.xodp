@@ -1,20 +1,31 @@
 {
-  "description": "Clear screen. Fills screen with black pixels.",
+  "description": "Report resolution of display.",
   "nodes": [
     {
+      "description": "Vertical resolution.",
+      "id": "S1-D-lwsB",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
       "description": "Pulse on completion.",
-      "id": "B1lb1yPir",
+      "id": "SyZSr-eDoB",
       "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 2,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Update. Triggers clear display.",
-      "id": "SJRL1yDiB",
+      "description": "Update. Triggers reading of display resolution.",
+      "id": "SyfSSZewjB",
       "label": "UPD",
       "position": {
         "units": "slots",
@@ -24,7 +35,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "id": "SkiK0CIsS",
+      "id": "r1HBWxvjr",
       "position": {
         "units": "slots",
         "x": 0,
@@ -34,7 +45,7 @@
     },
     {
       "description": "A tvout device.",
-      "id": "r1WsCRLjB",
+      "id": "rkxHrWxPsB",
       "label": "DEV",
       "position": {
         "units": "slots",
@@ -42,6 +53,17 @@
         "y": 0
       },
       "type": "@/input-tvout-device"
+    },
+    {
+      "description": "Horizontal resolution.",
+      "id": "ryFUWgPsH",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
     }
   ]
 }

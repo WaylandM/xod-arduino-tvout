@@ -1,9 +1,17 @@
 {
-  "description": "Clear screen. Fills screen with black pixels.",
   "nodes": [
     {
+      "id": "B1ov1lvjr",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
       "description": "Pulse on completion.",
-      "id": "B1lb1yPir",
+      "id": "rkZjvkgwsH",
       "label": "DONE",
       "position": {
         "units": "slots",
@@ -13,8 +21,8 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Update. Triggers clear display.",
-      "id": "SJRL1yDiB",
+      "description": "Update. Triggers display inversion.",
+      "id": "rkfjvkgPsr",
       "label": "UPD",
       "position": {
         "units": "slots",
@@ -24,17 +32,8 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "id": "SkiK0CIsS",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 1
-      },
-      "type": "xod/patch-nodes/not-implemented-in-xod"
-    },
-    {
       "description": "A tvout device.",
-      "id": "r1WsCRLjB",
+      "id": "rkgivylvsS",
       "label": "DEV",
       "position": {
         "units": "slots",

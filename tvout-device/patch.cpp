@@ -24,14 +24,14 @@ void evaluate(Context ctx) {
         return;
 
     auto state = getState(ctx);
-    auto mode = getValue<input_MODE>(ctx);
-    auto x = getValue<input_X>(ctx);
-    auto y = getValue<input_Y>(ctx);
+    uint8_t mode = getValue<input_MODE>(ctx);
+    uint8_t x = getValue<input_X>(ctx);
+    uint8_t y = getValue<input_Y>(ctx);
 
     // Create a new object in the memory area reserved previously.
     Type tv = new (state->mem) TVout();
 
-    if (!tv->begin(mode,x,y)) {
+    if (tv->begin(mode,x,y) != 0) {
       raiseError(ctx);
       return;
     }
