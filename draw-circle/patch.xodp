@@ -1,4 +1,5 @@
 {
+  "description": "Draw a circle at X, Y with a specified radius.",
   "nodes": [
     {
       "description": "The x coordinate of the center of the circle.",

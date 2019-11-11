@@ -1,2 +1,116 @@
 {
+  "description": "Draw a rectangle at X, Y with a specified width and height.",
+  "nodes": [
+    {
+      "description": "The y coordinate of upper left corner of the rectangle.",
+      "id": "H1VbmfUPjH",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The height of the rectangle.",
+      "id": "S1KPfUwsH",
+      "label": "H",
+      "position": {
+        "units": "slots",
+        "x": -5,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update. Triggers draw circle.",
+      "id": "S1zZXG8Por",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Rectangle will be filled with this color. Options:\n-1 = no fill;\n0 = black;\n1 = white;\n2 = invert.\n",
+      "id": "SJD-Qz8DoS",
+      "label": "FILL",
+      "position": {
+        "units": "slots",
+        "x": -3,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "Skb7MIvjr",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "The color of the rectangle. Options:\n0 = black;\n1 = white;\n2 = invert.",
+      "id": "Sy8-mMIviB",
+      "label": "COLOR",
+      "position": {
+        "units": "slots",
+        "x": -4,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The x coordinate of upper left corner of the rectangle.",
+      "id": "r17W7zIDiH",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "rJ-b7G8wor",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "The width of the rectangle.",
+      "id": "rJkvMLPiS",
+      "label": "W",
+      "position": {
+        "units": "slots",
+        "x": -6,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "A tvout device.",
+      "id": "rylb7fUvsH",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": -2
+      },
+      "type": "@/input-tvout-device"
+    }
+  ]
 }
