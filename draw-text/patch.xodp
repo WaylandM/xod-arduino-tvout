@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "description": "The x coordinate of upper left corner of the rectangle.",
+      "description": "The x coordinate of the cursor.",
       "id": "B1QTiGO_oS",
       "label": "X",
       "position": {
@@ -23,7 +23,7 @@
       "type": "@/input-tvout-device"
     },
     {
-      "description": "Update. Triggers draw circle.",
+      "description": "Update. Triggers draw text.",
       "id": "HJfaoGOdjH",
       "label": "UPD",
       "position": {
@@ -54,7 +54,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "The y coordinate of upper left corner of the rectangle.",
+      "description": "The y coordinate of the cursor.",
       "id": "HyETjMOOiH",
       "label": "Y",
       "position": {
@@ -65,6 +65,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
+      "description": "Set cursor position. If true cursor will be moved to the coordinates specified by X and Y. If false text will be printed at current cursor position. Cursor starts at top of screen and ",
       "id": "SJzLV_doH",
       "label": "XY",
       "position": {

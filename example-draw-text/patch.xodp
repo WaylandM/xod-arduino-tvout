@@ -1,0 +1,71 @@
+{
+  "links": [
+    {
+      "id": "r1FFz6OjB",
+      "input": {
+        "nodeId": "Hy_F-pOjr",
+        "pinKey": "SJHSSZ8f3f"
+      },
+      "output": {
+        "nodeId": "BknuGpOoH",
+        "pinKey": "SyomIRurDJ-"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJw5MaOiB",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "BknuGpOoH",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/core/add"
+    },
+    {
+      "id": "HyYRzTOsB",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/core/greater"
+    },
+    {
+      "id": "Hy_F-pOjr",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/core/nth-input(string)"
+    },
+    {
+      "id": "HymC-puir",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/stream/pass-until"
+    },
+    {
+      "id": "SJNmGTusS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    }
+  ]
+}
