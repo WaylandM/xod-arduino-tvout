@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "description": "The x coordinate of upper left corner of the rectangle.",
+      "id": "B1QTiGO_oS",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "A tvout device.",
+      "id": "BJgTsMu_iH",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tvout-device"
+    },
+    {
+      "description": "Update. Triggers draw circle.",
+      "id": "HJfaoGOdjH",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "HkasM__oH",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Font.",
+      "id": "HkwTjzOOjS",
+      "label": "FONT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The y coordinate of upper left corner of the rectangle.",
+      "id": "HyETjMOOiH",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SJzLV_doH",
+      "label": "XY",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "r1Z6ozu_sB",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "\"text\""
+      },
+      "id": "rJVt4OOoS",
+      "label": "TEXT",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-string"
+    }
+  ]
+}
