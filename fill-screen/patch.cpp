@@ -11,8 +11,9 @@ void evaluate(Context ctx) {
 
     // Get a pointer to the `TVout` class instance
     auto tv = getValue<input_DEV>(ctx);
+    char color = getValue<input_COLOR>(ctx);
 
-    tv->fill(0);
+    tv->fill(color);
 
     emitValue<output_DONE>(ctx, 1);
 }

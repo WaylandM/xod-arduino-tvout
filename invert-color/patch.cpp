@@ -12,7 +12,7 @@ void evaluate(Context ctx) {
     // Get a pointer to the `TVout` class instance
     auto tv = getValue<input_DEV>(ctx);
 
-    tv->clear_screen();
+    tv->fill(2);
 
     emitValue<output_DONE>(ctx, 1);
 }

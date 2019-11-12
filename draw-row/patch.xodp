@@ -1,0 +1,94 @@
+{
+  "description": "Fill a row between two columns.",
+  "nodes": [
+    {
+      "description": "Edge 0 of the fill. Start fill from this column.",
+      "id": "BkQK_dSOsS",
+      "label": "X0",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update. Triggers draw row.",
+      "id": "H1GK_OBOjr",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "The color of the fill. Options:\n0 = black;\n1 = white;\n2 = invert.",
+      "id": "H1rKOuBuir",
+      "label": "COLOR",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Edge 1 of fill. End fill at this column.",
+      "id": "HJUtddSOiS",
+      "label": "X1",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "HyKd_B_iH",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A tvout device.",
+      "id": "HyetOOHOiB",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tvout-device"
+    },
+    {
+      "description": "The row that fill will be performed on.",
+      "id": "rkVFudHuiS",
+      "label": "ROW",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "rkbKuur_jr",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}

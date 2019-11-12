@@ -1,0 +1,61 @@
+{
+  "description": "Fill the screen with specified color. ",
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "The color of the fill. Options:\n0 = black;\n1 = white;\n2 = invert.",
+      "id": "B1SMybDdjH",
+      "label": "COLOR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update. Triggers draw circle.",
+      "id": "ByMf1bwusr",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Hkz1bwOiS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "S1-G1bwOiH",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A tvout device.",
+      "id": "SklzkWPOiS",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tvout-device"
+    }
+  ]
+}

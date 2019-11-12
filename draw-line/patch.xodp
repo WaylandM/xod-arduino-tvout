@@ -1,2 +1,105 @@
 {
+  "description": "Draw a line between two points.",
+  "nodes": [
+    {
+      "description": "A tvout device.",
+      "id": "B1gT0BrdiB",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tvout-device"
+    },
+    {
+      "id": "H1aArB_sH",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "The x coordinate of point 1.",
+      "id": "H1vaRBHdiH",
+      "label": "X1",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "The color of the line. Options:\n0 = black;\n1 = white;\n2 = invert.",
+      "id": "HySpABr_sr",
+      "label": "COLOR",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The y coordinate of point 1.",
+      "id": "HyuaCHHOsS",
+      "label": "Y1",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The y coordinate of point 0.",
+      "id": "S1N60SBusr",
+      "label": "Y0",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The x coordinate of point 0.",
+      "id": "SJmTCHBdor",
+      "label": "X0",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update. Triggers draw line.",
+      "id": "SkM60rHdoS",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "rkbTRBSuoS",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
 }

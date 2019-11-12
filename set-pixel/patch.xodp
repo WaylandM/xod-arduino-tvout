@@ -1,0 +1,83 @@
+{
+  "description": "Set the color of a pixel.",
+  "nodes": [
+    {
+      "description": "A tvout device.",
+      "id": "B1lUWeLdsH",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tvout-device"
+    },
+    {
+      "description": "Update. Triggers set pixel.",
+      "id": "BJz8ZeI_iS",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "HyZ8We8_jB",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1"
+      },
+      "description": "The color of the pixel. Options:\n0 = black;\n1 = white;\n2 = invert.",
+      "id": "SyBU-l8_oS",
+      "label": "COLOR",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The y coordinate of the pixel.",
+      "id": "rJ4UWl8dor",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "The x coordinate of the pixel.",
+      "id": "rJ7UWe8_iB",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "ryIbx8_ir",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}
