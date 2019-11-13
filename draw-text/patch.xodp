@@ -65,7 +65,10 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Set cursor position. If true cursor will be moved to the coordinates specified by X and Y. If false text will be printed at current cursor position. Cursor starts at top of screen and ",
+      "boundLiterals": {
+        "__out__": "True"
+      },
+      "description": "Set cursor position. If true cursor will be moved to the coordinates specified by X and Y. If false text will be printed at current cursor position. ",
       "id": "SJzLV_doH",
       "label": "XY",
       "position": {
@@ -90,6 +93,7 @@
       "boundLiterals": {
         "__out__": "\"text\""
       },
+      "description": "String to print.",
       "id": "rJVt4OOoS",
       "label": "TEXT",
       "position": {
