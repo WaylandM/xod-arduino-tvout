@@ -13,28 +13,6 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Pulse on completion.",
-      "id": "SyZSr-eDoB",
-      "label": "DONE",
-      "position": {
-        "units": "slots",
-        "x": 2,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
-      "description": "Update. Triggers reading of display resolution.",
-      "id": "SyfSSZewjB",
-      "label": "UPD",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-pulse"
-    },
-    {
       "id": "r1HBWxvjr",
       "position": {
         "units": "slots",

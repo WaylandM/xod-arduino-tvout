@@ -42,9 +42,9 @@ void evaluate(Context ctx) {
     }
     
     if (xy) {
-        tv->println(x, y, cString)
+        tv->println(x, y, cString);
     } else {
-        tv->println(cString)
+        tv->println(cString);
     }
 
     emitValue<output_DONE>(ctx, 1);

@@ -5,15 +5,12 @@ struct State {
 {{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
-    // The node responds only if there is an input pulse
-    if (!isInputDirty<input_UPD>(ctx))
-        return;
-
     // Get a pointer to the `TVout` class instance
     auto tv = getValue<input_DEV>(ctx);
 
-    tv->clear_screen();
-    emitValue<output_X>(ctx, tv->hres());
-    emitValue<output_Y>(ctx, tv->vres());
-    emitValue<output_DONE>(ctx, 1);
+    unsigned char x, y;
+    x = tv->hres();
+    y = tv->vres();
+    emitValue<output_X>(ctx, x);
+    emitValue<output_Y>(ctx, y);
 }
