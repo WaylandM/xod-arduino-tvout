@@ -1,0 +1,69 @@
+{
+  "description": "Shift screen up, down, left or right by a specified distance.",
+  "nodes": [
+    {
+      "description": "Pulse on completion.",
+      "id": "By-YEcEoir",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Direction. Options:\n0 = up;\n1 = down;\n2 = left;\n3 = right.",
+      "id": "H1wln4jiS",
+      "label": "DIR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Update. Triggers delay.",
+      "id": "HJGt4c4iiH",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "HJY49NosS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A tvout device.",
+      "id": "rkxYEqNojS",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-tvout-device"
+    },
+    {
+      "description": "Distance in pixels.",
+      "id": "ryXYN9Ejjr",
+      "label": "DIST",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}
