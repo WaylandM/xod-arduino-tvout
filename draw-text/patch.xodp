@@ -43,7 +43,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Font.",
+      "description": "Font. Options:\n0 = font4x6;\n1 = font6x8;\n2 = font8x8;\n3 = font8x8ext.",
       "id": "HkwTjzOOjS",
       "label": "FONT",
       "position": {
