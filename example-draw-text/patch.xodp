@@ -1,71 +1,147 @@
 {
   "links": [
     {
-      "id": "r1FFz6OjB",
+      "id": "BkMs-2noH",
       "input": {
-        "nodeId": "Hy_F-pOjr",
-        "pinKey": "SJHSSZ8f3f"
+        "nodeId": "SJrrlh3jB",
+        "pinKey": "BJgTsMu_iH"
       },
       "output": {
-        "nodeId": "BknuGpOoH",
-        "pinKey": "SyomIRurDJ-"
+        "nodeId": "rJoyghnjB",
+        "pinKey": "SyyJUCHoH"
+      }
+    },
+    {
+      "id": "Bkd5Zhnor",
+      "input": {
+        "nodeId": "Hy_Me33jH",
+        "pinKey": "BJgTsMu_iH"
+      },
+      "output": {
+        "nodeId": "rJoyghnjB",
+        "pinKey": "SyyJUCHoH"
+      }
+    },
+    {
+      "id": "ByI_-nhsS",
+      "input": {
+        "nodeId": "rkzNl22sr",
+        "pinKey": "HJfaoGOdjH"
+      },
+      "output": {
+        "nodeId": "SysXg2hoS",
+        "pinKey": "r1Z6ozu_sB"
+      }
+    },
+    {
+      "id": "HJcq-33or",
+      "input": {
+        "nodeId": "SysXg2hoS",
+        "pinKey": "BJgTsMu_iH"
+      },
+      "output": {
+        "nodeId": "rJoyghnjB",
+        "pinKey": "SyyJUCHoH"
+      }
+    },
+    {
+      "id": "r1o_Z23jS",
+      "input": {
+        "nodeId": "SJrrlh3jB",
+        "pinKey": "HJfaoGOdjH"
+      },
+      "output": {
+        "nodeId": "rkzNl22sr",
+        "pinKey": "r1Z6ozu_sB"
+      }
+    },
+    {
+      "id": "r1p5ZnnoB",
+      "input": {
+        "nodeId": "rkzNl22sr",
+        "pinKey": "BJgTsMu_iH"
+      },
+      "output": {
+        "nodeId": "rJoyghnjB",
+        "pinKey": "SyyJUCHoH"
+      }
+    },
+    {
+      "id": "ryDhg3nsB",
+      "input": {
+        "nodeId": "SysXg2hoS",
+        "pinKey": "HJfaoGOdjH"
+      },
+      "output": {
+        "nodeId": "Hy_Me33jH",
+        "pinKey": "r1Z6ozu_sB"
       }
     }
   ],
   "nodes": [
     {
-      "id": "BJw5MaOiB",
+      "boundLiterals": {
+        "HJfaoGOdjH": "On Boot",
+        "HkwTjzOOjS": "2",
+        "rJVt4OOoS": "\"Font sizes:\""
+      },
+      "id": "Hy_Me33jH",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 3,
         "y": 1
       },
-      "type": "xod/core/count"
+      "type": "@/draw-text"
     },
     {
-      "id": "BknuGpOoH",
-      "position": {
-        "units": "slots",
-        "x": 5,
-        "y": 0
+      "boundLiterals": {
+        "HkwTjzOOjS": "2",
+        "SJzLV_doH": "False",
+        "rJVt4OOoS": "\"font8x8\""
       },
-      "type": "xod/core/add"
-    },
-    {
-      "id": "HyYRzTOsB",
+      "id": "SJrrlh3jB",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 3,
+        "y": 4
+      },
+      "type": "@/draw-text"
+    },
+    {
+      "boundLiterals": {
+        "SJzLV_doH": "False",
+        "rJVt4OOoS": "\"font4x6\""
+      },
+      "id": "SysXg2hoS",
+      "position": {
+        "units": "slots",
+        "x": 3,
         "y": 2
       },
-      "type": "xod/core/greater"
+      "type": "@/draw-text"
     },
     {
-      "id": "Hy_F-pOjr",
+      "id": "rJoyghnjB",
       "position": {
         "units": "slots",
-        "x": 5,
-        "y": 1
-      },
-      "type": "xod/core/nth-input(string)"
-    },
-    {
-      "id": "HymC-puir",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 2
-      },
-      "type": "xod/stream/pass-until"
-    },
-    {
-      "id": "SJNmGTusS",
-      "position": {
-        "units": "slots",
-        "x": 0,
+        "x": -1,
         "y": 0
       },
-      "type": "xod/core/clock"
+      "type": "@/tvout-device"
+    },
+    {
+      "boundLiterals": {
+        "HkwTjzOOjS": "1",
+        "SJzLV_doH": "False",
+        "rJVt4OOoS": "\"font6x8\""
+      },
+      "id": "rkzNl22sr",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/draw-text"
     }
   ]
 }

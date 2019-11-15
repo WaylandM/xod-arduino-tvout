@@ -1,4 +1,5 @@
 {
+  "description": "Draw text.",
   "nodes": [
     {
       "description": "The x coordinate of the cursor.",
