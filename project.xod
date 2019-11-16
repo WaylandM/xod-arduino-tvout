@@ -2,5 +2,5 @@
   "description": "Library for generating composite video on Arduino. Wraps Arduino-TVout (https://github.com/Avamander/arduino-tvout). Information on hardware connections can be found here: https://playground.arduino.cc/Main/TVout/",
   "license": "AGPL-3.0",
   "name": "arduino-tvout",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
