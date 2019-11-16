@@ -1,4 +1,5 @@
 {
+  "description": "Invert screen color.",
   "nodes": [
     {
       "id": "B1ov1lvjr",
