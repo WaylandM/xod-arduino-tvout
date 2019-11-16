@@ -94,7 +94,7 @@
       "boundLiterals": {
         "__out__": "\"text\""
       },
-      "description": "String to print.",
+      "description": "String to print. Use \\n for new line.",
       "id": "rJVt4OOoS",
       "label": "TEXT",
       "position": {

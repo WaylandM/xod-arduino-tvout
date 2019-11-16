@@ -83,7 +83,7 @@
       "boundLiterals": {
         "HJfaoGOdjH": "On Boot",
         "HkwTjzOOjS": "2",
-        "rJVt4OOoS": "\"Font sizes:\""
+        "rJVt4OOoS": "\"TVout\\n\\nFont sizes:\\n\""
       },
       "id": "Hy_Me33jH",
       "position": {
@@ -110,7 +110,7 @@
     {
       "boundLiterals": {
         "SJzLV_doH": "False",
-        "rJVt4OOoS": "\"font4x6\""
+        "rJVt4OOoS": "\"font4x6\\n\""
       },
       "id": "SysXg2hoS",
       "position": {
@@ -124,7 +124,7 @@
       "id": "rJoyghnjB",
       "position": {
         "units": "slots",
-        "x": -1,
+        "x": 0,
         "y": 0
       },
       "type": "@/tvout-device"
@@ -133,7 +133,7 @@
       "boundLiterals": {
         "HkwTjzOOjS": "1",
         "SJzLV_doH": "False",
-        "rJVt4OOoS": "\"font6x8\""
+        "rJVt4OOoS": "\"font6x8\\n\""
       },
       "id": "rkzNl22sr",
       "position": {

@@ -11,8 +11,8 @@ void evaluate(Context ctx) {
 
     // Get a pointer to the `TVout` class instance
     auto tv = getValue<input_DEV>(ctx);
-    uint16_t x0 = getValue<input_X0>(ctx);
-    uint16_t x1 = getValue<input_X1>(ctx);
+    uint16_t x0 = getValue<input_Y0>(ctx);
+    uint16_t x1 = getValue<input_Y1>(ctx);
     uint8_t column = getValue<input_COLUMN>(ctx);
     char color = getValue<input_COLOR>(ctx);
 
